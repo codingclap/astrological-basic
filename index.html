@@ -978,27 +978,38 @@
 		</div>
 
 
-
-		<div class="astrology text-center">
-			<div class="as-title text-center">
-				<h2>Astrology Houses</h2>
-			</div>
-			<div class="astrologyimg"> 
+		<style>
+			figure.containerZoom{background-position:50% 50%;position:relative;width:60%;overflow:hidden;cursor:zoom-in;margin:0 auto;}figure.containerZoom img{transition:opacity .5s;display:block;width:100%}figure.containerZoom.active img{opacity:0}
+			figure {
+			/* border: white solid 10px;
+			box-shadow: 0 0 15px #0000006b; */
+			
+		}
+		@media screen and (max-width: 875px) {
+		  figure.containerZoom{position:relative;width:80%;}
+		   
+		}
+		</style>
 		
-			
-			
-
-
-    <div class="tile" data-scale="2.4" data-image="img/Astrology-Houses-wheel.png"></div>
-
-
-</div>
-			<p>Hover on the image to see larger view</p>
-		</div>
-
-		<div class="physic-sorce text-center">
-			<img src="img/logo.svg">
-		</div>
+				<div class="astrology text-center">
+					<div class="as-title text-center">
+						<h2>Astrology Houses</h2>
+					</div>
+					<div class="astrologyimg">
+						 
+						<img id="imageZoom" src="img/Astrology-Houses-wheel.jpg"> 
+						 
+					</div>
+					<p>Click on the image to see larger view</p>
+				</div>
+				<script src="js/jquery.min.js" type="text/javascript"></script>
+				<script src="js/image-zoom.js" type="text/javascript"></script>
+				<script> 
+				  $(document).ready(function(){ $('#imageZoom').imageZoom({zoom : 130}); }); 
+				</script>
+				<div class="physic-sorce text-center">
+					<img src="img/logo.svg">
+				</div>
 
 		<div class="whole-resources">
 			<h2 class="text-center">RESOURCES</h2>
