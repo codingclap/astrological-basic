@@ -478,6 +478,9 @@ body{
 }
 
 @media screen and (max-width: 940px) {
+  br{
+    display: none;
+  }
   .cp-astrology-healers .mod-img img { 
     margin: 0 0px;
 }
@@ -571,6 +574,7 @@ body{
 }
 }
 @media screen and (max-width: 791px) {
+  
 	.cp-astrology-healers .astrology .tile, .cp-astrology-healers .astrology .photo {
   height: 80vh;
 }
@@ -597,6 +601,8 @@ body{
 	.cp-astrology-healers .astrology .tile, .cp-astrology-healers .astrology .photo {
   height: 50vh;
 }
+
+
 .cp-astrology-healers .header p {
   margin-top: -12px;
   font-size: 18px;
@@ -720,4 +726,11 @@ border-bottom: 3px solid #ffedd4;
   font-size: 28px;
   line-height: 35px;
 }
+}
+
+
+@media screen and (max-width: 450px){
+  .cp-astrology-healers .understanding-desc p{
+    font-size: 18px;
+  }
 }
