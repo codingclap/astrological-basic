@@ -493,11 +493,18 @@ body{
 }
 @media screen and (max-width: 870px) {
   .cp-astrology-healers .point-col { 
-    max-width: 80%;
+    max-width: 40%;
     border-bottom: 3px solid #ffedd4;
   }
   .cp-astrology-healers .border-right::after{
     width: 0px;
+  }
+  .cp-astrology-healers .point-col h2 {
+    font-size: 22px;
+    margin: 0 0 6px 0;
+  }
+  .cp-astrology-healers .point-col p { 
+    font-size: 16px; 
   }
 }
 @media screen and (max-width: 860px) {
@@ -634,7 +641,7 @@ body{
   padding: 40px 0;
 }
 .cp-astrology-healers .point-col {
-  max-width: 90%;
+  max-width: 45%;
   margin: 0 auto;
     margin-bottom: 0px;
   width: 100%;
@@ -651,8 +658,11 @@ border-bottom: 3px solid #ffedd4;
   max-width: 70px;
 }
 .cp-astrology-healers .point-col h2 {
-  font-size: 28px;
+  font-size: 22px;
   margin: 0 0 6px 0;
+}
+.cp-astrology-healers .point-col p { 
+  font-size: 16px; 
 }
 .cp-astrology-healers .whole-transits th {
   font-size: 15px; 
@@ -745,4 +755,9 @@ border-bottom: 3px solid #ffedd4;
 .cp-astrology-healers .point-col p{
   font-size: 18px;
 }
+.cp-astrology-healers .point-col h2 {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+}
+ 
 }
