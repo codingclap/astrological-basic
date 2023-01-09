@@ -733,4 +733,16 @@ border-bottom: 3px solid #ffedd4;
   .cp-astrology-healers .understanding-desc p{
     font-size: 18px;
   }
+  .cp-astrology-healers .modalities-col h3 {
+    font-size: 20px;
+}
+.cp-astrology-healers .modalities-col p {
+  font-size: 18px;
+}
+.cp-astrology-healers .point-col img {
+  max-width: 60px;
+}
+.cp-astrology-healers .point-col p{
+  font-size: 18px;
+}
 }
