@@ -693,7 +693,7 @@ body{
 	padding: 10% 0 10% 0;
 }
 .cp-astrology-healers .point-col {
-  max-width: 42%;
+  max-width: 48%;
   margin: 0 auto;
     margin-bottom: 0px;
   margin-bottom: 0px;
@@ -787,9 +787,9 @@ body{
   line-height: 28px;
 }
 .cp-astrology-healers .point-col h2 {
-  font-size: 22px; 
+  font-size: 19px; 
 }
 .cp-astrology-healers .point-col p { 
-  font-size: 19px;
+  font-size: 16px;
 }
 }
