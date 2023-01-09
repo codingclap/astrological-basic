@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -912,7 +913,7 @@
 			<div class="wrapper">
 				<table cellspacing="0px">
 					<tr>
-						<th style="width:20%;">Planet</th>
+						<th style="width:30%;">Planet</th>
 						<th>Time in Each Sign</th>
 						<th>Influence</th>
 					</tr>
@@ -979,11 +980,12 @@
 				<h2>Astrology Houses</h2>
 			</div>
 			<div class="astrologyimg"> 
-				<img src="img/Astrology-Houses-wheel.png"> 
+				<!-- <img src="img/Astrology-Houses-wheel.png">  -->
+				<div class="tile" data-scale="2.4" data-image="img/Astrology-Houses-wheel.png"></div>
 			</div>
 			<p>Click on the image to see larger view</p>
-		</div>
-
+		</div> 
+		 
 		<div class="physic-sorce text-center">
 			<img src="img/logo.svg">
 		</div>
@@ -1032,7 +1034,30 @@
 
 		</div>
 	</div>
-
+	<script>
+		$('.tile')
+		  // tile mouse actions
+		  .on('mouseover', function(){
+			$(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+		  })
+		  .on('mouseout', function(){
+			$(this).children('.photo').css({'transform': 'scale(1)'});
+		  })
+		  .on('mousemove', function(e){
+			$(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+		  })
+		  // tiles set up
+		  .each(function(){
+			$(this)
+			  // add a photo container
+			  .append('<div class="photo"></div>')
+			  // some text just to show zoom level on current item in this example
+			  .append('<div class="txt"><div class="x">'+ $(this).attr('data-scale') +'x</div>ZOOM ON<br>HOVER</div>')
+			  // set up a background image for each tile based on data-image attribute
+			  .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+		  })
+	  
+	  </script>
 
 </body>
 
