@@ -478,9 +478,10 @@ body{
   position: relative;
   display: none;
 }
-.planet.moon img {
+.planet.saturn img {
   width: 100%;
-  max-width: 40px;
+  max-width: 112px;
+  margin-bottom: 2px;
 }
 @media screen and (max-width: 1135px) {
   .cp-astrology-healers .whole-astrological th{
@@ -490,9 +491,6 @@ body{
 }
 
 @media screen and (max-width: 940px) {
-  br{
-    display: none;
-  }
 	.cp-astrology-healers .understand-img-heading{
 		display: none;
 	}
@@ -519,7 +517,7 @@ body{
 .cp-astrology-healers .point-col {
   max-width: 45%;
   border-right: 3px solid #ffedd4;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
   .cp-astrology-healers .border-right::after{
     width: 0px;
@@ -564,7 +562,7 @@ body{
 	}
 	.cp-astrology-healers .understanding .as-title h2 {
   font-size: 40px;
-  padding: 45px 0;
+  padding: 30px 0;
 }
 .cp-astrology-healers .understanding-desc p{
 
@@ -573,13 +571,17 @@ body{
 }
 }
 @media screen and (max-width: 850px) {
+	.cp-astrology-healers .understanding-desc p br{
+		display: none;
+	}
 	.cp-astrology-healers .as-title h2 {
   margin-bottom: 18px;
 }
 .cp-astrology-healers .astrology p {
   margin-top: 0;
+  font-size: 16px;
 }
-		.whole-planet {
+.whole-planet {
   margin-bottom: 30px;
 }
   .cp-astrology-healers {  
@@ -608,6 +610,17 @@ body{
 }
 }
 @media screen and (max-width: 791px) {
+	.cp-astrology-healers .point-col img {
+  width: 100%;
+  max-width: 60px;
+}
+.cp-astrology-healers .point-col h2 {
+
+  font-size: 22px;
+}
+.cp-astrology-healers .point-col p {
+  font-size: 18px;
+}
 .cp-astrology-healers .astrology .tile, .cp-astrology-healers .astrology .photo {
   height: 75vh;
 }
@@ -631,10 +644,14 @@ body{
 }
 }
 @media screen and (max-width: 500px) {
-.cp-astrology-healers .planet {
-  width: 100%;
-  max-width: 32%;
+	.cp-astrology-healers .understanding-desc p {
+  font-size: 18px;
+  line-height: 26px;
 }
+	.cp-astrology-healers .point-col p br{
+		display: none;
+	}
+
 .cp-astrology-healers .whole-planet .second-row {
   overflow: hidden;
   clear: both;
@@ -642,9 +659,7 @@ body{
 	.cp-astrology-healers .planet p{
 		font-size: 14px;
 	}
-.cp-astrology-healers .point-col {
-  border-right: unset;
-}
+
 	.cp-astrology-healers .astrology .tile, .cp-astrology-healers .astrology .photo {
   height: 58vh;
 }
@@ -678,7 +693,7 @@ body{
 	padding: 10% 0 10% 0;
 }
 .cp-astrology-healers .point-col {
-  max-width: 90%;
+  max-width: 42%;
   margin: 0 auto;
     margin-bottom: 0px;
   margin-bottom: 0px;
@@ -686,15 +701,12 @@ body{
   float: unset;
   margin-bottom: 12px;
 }
-.cp-astrology-healers .point-col.chiron {
-  border-bottom: none;
-}
+
  
 .cp-astrology-healers .point-col img {
-  max-width: 70px;
+  max-width: 60px;
 }
 .cp-astrology-healers .point-col h2 {
-  font-size: 28px;
   margin: 0 0 6px 0;
 }
 .cp-astrology-healers .whole-transits th {
