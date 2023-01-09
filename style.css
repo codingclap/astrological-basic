@@ -793,3 +793,33 @@ body{
   font-size: 16px;
 }
 }
+
+@media screen and (max-width: 290px){
+.cp-astrology-healers .astrol-col img {
+  width: 100%;
+  max-width: 26px;
+}
+.cp-astrology-healers .atr-sy img {
+  float: right;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+.cp-astrology-healers .astro-sin-tex p {
+  margin-left: 16px;
+}
+}
+
+@media screen and (max-width: 230px){
+  .cp-astrology-healers .astrol-col img {
+    width: 100%;
+    max-width: 26px;
+  }
+  .cp-astrology-healers .atr-sy img {
+    float: right;
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+  .cp-astrology-healers .astro-sin-tex p {
+    margin-left: 12px;
+  }
+  }
